@@ -1,0 +1,556 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Lato";
+    font-weight: 700;
+    color: #4F4F4F;
+}
+
+h2,
+h3 {
+    font-family: "Mulish";
+    font-weight: 700;
+}
+
+h4 {
+    font-family: "Mulish";
+    font-weight: 600;
+}
+
+li {
+    font-family: "Mulish";
+    font-weight: 400;
+}
+
+.page-home {
+    min-height: 100vh;
+}
+
+.footer-text {
+    font-family: "Mulish";
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Взял красивое оформление кнопок. Много кода */
+/* -------------------------------------------------------------------------------------------------- */
+
+
+.btn {
+    font-family: "Mulish";
+    margin: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #4F4F4F;
+    transition: 1s;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    font-size: x-large
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Блок 1. Меню */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.main-title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 9rem;
+    font-size: 56px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 7rem;
+    width: 100%;
+}
+
+
+.line {
+    border-top: 2px solid black;
+    width: 90%;
+    margin-top: 1.8rem;
+}
+
+.line-design {
+    border-top: 2px solid black;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Блок 2. Обложка */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.img-back {
+    width: 100%;
+    height: 100%;
+}
+
+.container-preview {
+    background-image: url("/assets/home-background1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-preview {
+    position: absolute;
+    margin-top: 45%;
+    width: 35%;
+    height: 16rem;
+}
+
+.block-preview::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background: white;
+    background-position: 50%;
+    border-radius: 4px;
+}
+
+.preview-title {
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+    color: #343434;
+    text-align: center;
+    font-size: 44px;
+    padding: 2rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Стилизация 3 блока. Детали и опсание */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.design {
+    display: flex;
+    background-color: #C5D4F0;
+    height: 100%;
+    width: 100%;
+}
+
+.img-home {
+    height: 30rem;
+    width: 42rem;
+}
+
+.description {
+    display: flex;
+}
+
+
+.design-page {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+
+}
+
+.design-main {
+    display: flex;
+
+}
+
+.design-img {
+    margin: 5rem;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+}
+
+.block-details {
+    margin-top: 2rem;
+}
+
+.about-details {
+    font-size: 44px;
+    text-align: center;
+}
+
+.title-details {
+    font-size: 36px;
+    margin-bottom: 1rem;
+    line-height: 56px;
+}
+
+.details {
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Блок 4. Блок с ссылкой на ютуб */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.video {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.video-title {
+    font-size: 44px;
+}
+
+.youtube {
+    margin-top: 2rem;
+    height: 30rem;
+    width: 50rem;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-youtube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 44px;
+    font-family: "Mulish";
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Блок 5. Блок с деталями. Описанием комнат, дома, паркинга. */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.description-page {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.details-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 14rem;
+}
+
+.details-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #C5D4F0;
+
+    height: 30rem;
+    width: 38rem;
+    padding: 3rem;
+}
+
+.details-title {
+    font-size: 44px;
+
+}
+
+.details-list li {
+    margin-left: 1.2rem;
+    margin-top: 2rem;
+    font-size: 24px;
+}
+
+.details-icon {
+    background: black;
+    height: 30rem;
+    width: 32rem;
+}
+
+.icon-descripton {
+    color: white;
+    font-family: "Mulish";
+}
+
+.block-icons {
+    padding: 5rem;
+    text-align: center;
+    width: 60%;
+    height: 30rem;
+}
+
+.details-icon {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px;
+    column-gap: 100px;
+    row-gap: 100px;
+}
+
+.icons-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon-descripton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-left: 1.6rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Стилизация футера */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.footer {
+    width: 100%;
+    height: 8rem;
+    background-color: #373F41;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    color: #C3CBCD;
+    font-size: 12px;
+}
+
+/* ---------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ВТОРАЯ ЧАСТЬ САЙТА, ЭКСТЕРЬЕР ДОМА */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------- */
+
+
+/* Блок 1. Меню */
+
+.main-title-exterior {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 9rem;
+    font-size: 56px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Блок 2. Обложка */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.container-preview-exterior {
+    background-image: url("/assets/exterior-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.block-preview-exterior {
+    position: absolute;
+    margin-top: 45%;
+    width: 35%;
+    height: 16rem;
+}
+
+.block-preview-exterior::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background: white;
+    background-position: 50%;
+    border-radius: 4px;
+}
+
+.preview-title-exterior {
+    position: relative;
+    z-index: 2;
+    margin-top: 4rem;
+    color: #343434;
+    text-align: center;
+    font-size: 44px;
+    padding: 2rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Блок 3. Основной контент. Описание */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.exterior-img {
+    height: 20rem;
+    width: 34rem;
+}
+
+.exterior-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+}
+
+.exterior-description {
+    display: flex;
+    margin: 2rem;
+}
+
+.exterior-block {
+    height: 20rem;
+    width: 34rem;
+    margin-left: 3rem;
+}
+
+.exterior-block-reverse {
+    height: 20rem;
+    width: 34rem;
+    margin-right: 3rem;
+}
+
+.exterior-h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-family: "Mulish";
+}
+
+.exterior-span {
+    font-size: 18px;
+    line-height: 56px;
+    font-family: "Mulish";
+    font-weight: 400;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Третья часть сайта. Интерьер. Описание */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.interior-conteiner {
+    display: flex;
+}
+
+.container-preview-interier {
+    background-image: url("/assets/interior-background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.block-preview-interier {
+    position: absolute;
+    margin-top: 45%;
+    width: 35%;
+    height: 16rem;
+}
+
+.block-preview-interier::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background: white;
+    background-position: 50%;
+    border-radius: 4px;
+}
+
+.preview-title-interier {
+    position: relative;
+    z-index: 2;
+    margin-top: 4rem;
+    color: #343434;
+    text-align: center;
+    font-size: 44px;
+    padding: 2rem;
+}
+
+.interior-img {
+    height: 20rem;
+    width: 34rem;
+}
+
+.interior-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+}
+
+.interior-description {
+    display: flex;
+    margin: 2rem;
+}
+
+.interior-block {
+    height: 20rem;
+    width: 34rem;
+    margin-left: 3rem;
+}
+
+.interior-block-reverse {
+    height: 20rem;
+    width: 34rem;
+    margin-right: 3rem;
+}
+
+.interior-h3 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.interior-span {
+    font-size: 18px;
+    line-height: 56px;
+    font-family: "Mulish";
+    font-weight: 400;
+}
