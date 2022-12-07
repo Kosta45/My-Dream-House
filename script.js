@@ -7,16 +7,15 @@ const route = (event) => {
 };
 
 const routes = {
-    404: "/pages/404.html",
-    "/": "/main.html",
-    "/home": "/home.html",
+    "/": "/index.html",
+    "/home": "/index.html",
     "/exterior": "/exterior.html",
     "/interior": "/interior.html",
 }
 
 const location = async () => {
     const path = window.location.pathname;
-    const route = routes[path] || routes[404];
+    const route = routes[path];
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html;
 }
