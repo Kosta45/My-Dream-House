@@ -39,10 +39,6 @@ li {
     font-family: "Mulish";
 }
 
-/* ---------------------------------------------------------------------------------------------------- */
-/* Взял красивое оформление кнопок. Много кода */
-/* -------------------------------------------------------------------------------------------------- */
-
 
 .btn {
     font-family: "Mulish";
@@ -245,6 +241,7 @@ li {
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
+    transition: 1.2s;
 }
 
 .link-youtube {
@@ -256,6 +253,15 @@ li {
     font-family: "Mulish";
     font-weight: 400;
     color: #4F4F4F;
+    transition: 1.2s;
+}
+
+.youtube:hover {
+    background-color: #373F41;
+}
+
+.link-youtube:hover {
+    color: white;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
@@ -344,7 +350,7 @@ li {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
-/* Стилизация футера */
+/* Блок 6. стилизация футера */
 /* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 .footer {
@@ -476,7 +482,7 @@ li {
     display: flex;
 }
 
-.container-preview-interier {
+.container-preview-interior {
     background-image: url("/assets/interior-background.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -484,14 +490,14 @@ li {
     height: 100vh;
 }
 
-.block-preview-interier {
+.block-preview-interior {
     position: absolute;
     margin-top: 45%;
     width: 35%;
     height: 16rem;
 }
 
-.block-preview-interier::before {
+.block-preview-interior::before {
     content: " ";
     display: block;
     position: absolute;
@@ -504,7 +510,7 @@ li {
     border-radius: 4px;
 }
 
-.preview-title-interier {
+.preview-title-interior {
     position: relative;
     z-index: 2;
     margin-top: 4rem;
@@ -553,4 +559,1603 @@ li {
     line-height: 56px;
     font-family: "Mulish";
     font-weight: 400;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для нетбука */
+/* Адаптив для нетбука     СТРАНИЦА HOME */
+/* Адаптив для нетбука */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 1024px) {
+
+    body,
+    section {
+        max-width: 1024px;
+    }
+
+    /* ПЕРВЫЙ БЛОК НЕ МЕНЯЮ */
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+
+    .container-preview {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .main-title {
+        height: 7rem;
+        font-size: 46px;
+    }
+
+
+    .block-preview {
+        height: 12rem;
+    }
+
+    .preview-title {
+        font-size: 30px;
+    }
+
+    /* ----------------------------------------- */
+    /* Третий блок */
+    /* ----------------------------------------- */
+
+    .img-home {
+        height: 20rem;
+        width: 32rem;
+    }
+
+    .design-page {
+        padding: 2rem;
+    }
+
+    .design-img {
+        margin: 3rem;
+    }
+
+    .description {
+        margin-top: 3rem;
+    }
+
+    .block-details {
+        margin-top: 1rem;
+    }
+
+    .about-details {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .title-details {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        line-height: 30px;
+    }
+
+    .details {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /* ЧЕТВЕРТЫЙ БЛОК НЕ МЕНЯЮ */
+
+    /* ----------------------------------------- */
+    /* Пятый блок */
+    /* ----------------------------------------- */
+
+    .details-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16rem;
+    }
+
+    .details-block {
+        height: 26rem;
+        width: 28rem;
+        padding: 2.6rem;
+    }
+
+    .details-title {
+        font-size: 36px;
+
+    }
+
+    .details-list li {
+        margin-left: 1.2rem;
+        margin-top: 2rem;
+        font-size: 20px;
+    }
+
+    .details-icon {
+        height: 26rem;
+        width: 28rem;
+    }
+
+
+    .block-icons {
+        padding: 4.5rem;
+        width: 50%;
+        height: 26rem;
+    }
+
+    .details-icon {
+        display: grid;
+        grid-template-columns: 180px 180px;
+        grid-template-rows: 90px 90px;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+
+    .icon-descripton {
+        font-size: 20px;
+        margin-left: 1.6rem;
+    }
+
+    /* ---------------------------- */
+    /* 6 БЛОК НЕ МЕНЯЮ */
+    /* ---------------------------- */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для планшета */
+/* Адаптив для планшета     СТРАНИЦА HOME */
+/* Адаптив для планшета */
+/* --------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+    body,
+    section {
+        max-width: 768px;
+    }
+
+    /* ПЕРВЫЙ БЛОК НЕ МЕНЯЮ */
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+    .btn {
+        font-size: 16px;
+    }
+
+    .container-preview {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 55vh;
+    }
+
+    .main-title {
+        height: 5rem;
+        font-size: 30px;
+    }
+
+    .block-preview {
+        height: 10rem;
+    }
+
+    .preview-title {
+        font-size: 20px;
+    }
+
+    /* ----------------------------------------- */
+    /* Третий блок */
+    /* ----------------------------------------- */
+
+    .img-home {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .design-page {
+        padding: 2rem;
+    }
+
+    .design-img {
+        margin: 2rem;
+    }
+
+    .description {
+        margin-top: 3rem;
+    }
+
+    .block-details {
+        margin-top: 0.5rem;
+    }
+
+    .about-details {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .title-details {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+        line-height: 24px;
+    }
+
+    .details {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* ----------------------------------------- */
+    /* Блок 4. Блок с ссылкой на ютуб */
+    /* ----------------------------------------- */
+
+    .youtube {
+        margin-top: 2rem;
+        height: 20rem;
+        width: 40rem;
+    }
+
+    /* ----------------------------------------- */
+    /* Пятый блок */
+    /* ----------------------------------------- */
+
+    .description-page {
+        height: 18rem;
+    }
+
+    .details-box {
+        margin-bottom: 16rem;
+    }
+
+    .details-block {
+        height: 22rem;
+        width: 20rem;
+        padding: 3rem;
+    }
+
+    .details-title {
+        font-size: 26px;
+    }
+
+    .details-list li {
+        margin-left: 1.2rem;
+        margin-top: 1.2rem;
+        font-size: 16px;
+    }
+
+    .details-icon {
+        height: 22rem;
+        width: 20rem;
+    }
+
+
+    .block-icons {
+        padding: 3.2rem;
+        width: 30%;
+        height: 22rem;
+    }
+
+    .details-icon {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 60px 60px;
+        column-gap: 50px;
+        row-gap: 80px;
+    }
+
+    .icon-descripton {
+        font-size: 14px;
+        margin-left: 1.3rem;
+    }
+
+
+    /* ---------------------------- */
+    /* 6 БЛОК НЕ МЕНЯЮ */
+    /* ---------------------------- */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 480px */
+/* Адаптив для смартфона 480px    СТРАНИЦА HOME */
+/* Адаптив для смартфона 480px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    body,
+    section {
+        max-width: 480px;
+    }
+
+    /* ПЕРВЫЙ БЛОК НЕ МЕНЯЮ */
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+    .btn {
+        font-size: 16px;
+    }
+
+    .container-preview {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .main-title {
+        height: 6rem;
+        font-size: 30px;
+    }
+
+    .block-preview {
+        margin-bottom: -4rem;
+        height: 11rem;
+    }
+
+    .preview-title {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------- */
+    /* Третий блок */
+    /* ----------------------------------------- */
+
+    .img-home {
+        height: 14rem;
+        width: 22rem;
+    }
+
+    .design-page {
+        padding: 2rem;
+    }
+
+    .design-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description {
+        margin-top: 2rem;
+    }
+
+    .block-details {
+        margin-top: 1rem;
+    }
+
+    .about-details {
+        font-size: 26px;
+        text-align: center;
+        margin-top: -2rem;
+    }
+
+    .title-details {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+        line-height: 24px;
+    }
+
+    .details {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* ----------------------------------------- */
+    /* Блок 4. Блок с ссылкой на ютуб */
+    /* ----------------------------------------- */
+
+    .youtube {
+        margin-top: 2rem;
+        height: 20rem;
+        width: 30rem;
+    }
+
+    /* ----------------------------------------- */
+    /* Блок 5 Пятый блок */
+    /* ----------------------------------------- */
+
+    .description-page {
+        height: 36rem;
+    }
+
+    .details-box {
+        margin-bottom: 16rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-block {
+        height: 22rem;
+        width: 20rem;
+        padding: 3rem;
+    }
+
+    .details-title {
+        font-size: 26px;
+    }
+
+    .details-list li {
+        margin-left: 1.2rem;
+        margin-top: 1.2rem;
+        font-size: 16px;
+    }
+
+    .details-icon {
+        height: 22rem;
+        width: 20rem;
+    }
+
+
+    .block-icons {
+        padding: 3.2rem;
+        width: 30%;
+        height: 22rem;
+    }
+
+    .details-icon {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 60px 60px;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+
+    .icon-descripton {
+        font-size: 14px;
+        margin-left: 1.6rem;
+    }
+
+
+    /* ---------------------------- */
+    /* 6 БЛОК  */
+    /* ---------------------------- */
+
+    .footer {
+        height: 4rem;
+    }
+
+    .footer-text {
+        height: 4rem;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 320px */
+/* Адаптив для смартфона 320px    СТРАНИЦА HOME */
+/* Адаптив для смартфона 320px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 320px) {
+
+    body,
+    section {
+        max-width: 320px;
+    }
+
+    /* ----------------------------------------- */
+    /*1 Блок */
+    /* ----------------------------------------- */
+    .btn {
+        font-size: 14px;
+    }
+
+    /* ----------------------------------------- */
+    /*2 Блок */
+    /* ----------------------------------------- */
+    .container-preview {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .main-title {
+        height: 6rem;
+        font-size: 26px;
+    }
+
+    .block-preview {
+        margin-top: 7.5rem;
+        height: 10rem;
+    }
+
+    .preview-title {
+        font-size: 10px;
+    }
+
+    /* ----------------------------------------- */
+    /* 3  блок */
+    /* ----------------------------------------- */
+
+    .img-home {
+        height: 11rem;
+        width: 16rem;
+    }
+
+    .design-page {
+        padding: 0rem;
+        height: 37rem;
+    }
+
+    .design-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .block-details {
+        margin-top: 1rem;
+    }
+
+    .about-details {
+        font-size: 20px;
+        text-align: center;
+        margin-top: -2rem;
+    }
+
+    .title-details {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+        line-height: 24px;
+    }
+
+    .details {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    /* ----------------------------------------- */
+    /* Блок 4. Блок с ссылкой на ютуб */
+    /* ----------------------------------------- */
+
+    .youtube {
+        margin-top: 2rem;
+        height: 14rem;
+        width: 20rem;
+    }
+
+    .video-title {
+        font-size: 30px;
+    }
+
+    .link-youtube {
+        font-size: 30px;
+    }
+
+    /* ----------------------------------------- */
+    /* Блок 5 Пятый блок */
+    /* ----------------------------------------- */
+
+    .description-page {
+        height: 36rem;
+    }
+
+    .details-box {
+        margin-bottom: 16rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-block {
+        height: 22rem;
+        width: 20rem;
+        padding: 3rem;
+    }
+
+    .details-title {
+        font-size: 26px;
+    }
+
+    .details-list li {
+        margin-left: 1.2rem;
+        margin-top: 1.2rem;
+        font-size: 16px;
+    }
+
+    .details-icon {
+        height: 22rem;
+        width: 20rem;
+    }
+
+
+    .block-icons {
+        padding: 3.2rem;
+        width: 30%;
+        height: 22rem;
+    }
+
+    .details-icon {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 60px 60px;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+
+    .icon-descripton {
+        font-size: 14px;
+        margin-left: 1.6rem;
+    }
+
+
+    /* ---------------------------- */
+    /* 6 БЛОК  */
+    /* ---------------------------- */
+
+    .footer {
+        height: 4rem;
+    }
+
+    .footer-text {
+        height: 4rem;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для нетбука */
+/* Адаптив для нетбука     СТРАНИЦА EXTERIOR */
+/* Адаптив для нетбука */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+    body,
+    section {
+        max-width: 1024px;
+    }
+
+    /* ПЕРВЫЙ БЛОК НЕ МЕНЯЮ */
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+
+    .container-preview-exterior {
+        height: 80vh;
+    }
+
+    .main-title-exterior {
+        height: 7rem;
+        font-size: 46px;
+    }
+
+    .block-preview-exterior {
+        height: 12rem;
+    }
+
+    .preview-title-exterior {
+        font-size: 30px;
+        margin-top: 3rem;
+    }
+
+    /* ------------------------------------------------------------- */
+    /* Третий блок  */
+    /* ----------------------------------------------------------------- */
+
+    .exterior-img {
+        height: 16rem;
+        width: 28rem;
+    }
+
+    .exterior-block {
+        height: 20rem;
+        width: 34rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 20rem;
+        width: 34rem;
+        margin-right: 1rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+
+    }
+
+    .exterior-span {
+        font-size: 18px;
+        line-height: 40px;
+
+
+
+    }
+
+    /* ------------------------------------- */
+    /* 4 футер  без изменений*/
+    /* --------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для планшета */
+/* Адаптив для планшета     СТРАНИЦА HOME */
+/* Адаптив для планшета */
+/* --------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+    body,
+    section {
+        max-width: 768px;
+    }
+
+    /* ПЕРВЫЙ БЛОК */
+
+    .btn {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+
+    .container-preview-exterior {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .main-title-exterior {
+        height: 5rem;
+        font-size: 30px;
+    }
+
+    .block-preview-exterior {
+        height: 10rem;
+    }
+
+    .preview-title-exterior {
+        margin-top: 2.5rem;
+        font-size: 20px;
+    }
+
+    /* ----------------------------------------- */
+    /* 3 блок */
+    /* ----------------------------------------- */
+
+    .exterior-img {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .exterior-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        max-width: 48rem;
+    }
+
+    .exterior-description {
+        display: flex;
+        margin: 1rem;
+    }
+
+    .exterior-block {
+        height: 16rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 16rem;
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .exterior-span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* 4 блок. футер не трогаю */
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 480px */
+/* Адаптив для смартфона 480px    СТРАНИЦА HOME */
+/* Адаптив для смартфона 480px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    body,
+    section {
+        max-width: 480px;
+    }
+
+    /* ПЕРВЫЙ БЛОК */
+    .btn {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------- */
+    /* 2 Второй блок не трогаю */
+    /* ----------------------------------------- */
+
+    /* ----------------------------------------- */
+    /* 3 Третий блок */
+    /* ----------------------------------------- */
+    .exterior-img {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .exterior-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        max-width: 48rem;
+    }
+
+    .exterior-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exterior-block {
+        height: 16rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 16rem;
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .exterior-span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 320px */
+/* Адаптив для смартфона 320px    СТРАНИЦА EXTERIOR */
+/* Адаптив для смартфона 320px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 320px) {
+
+    body,
+    section {
+        max-width: 320px;
+    }
+
+    /* ----------------------------------------- */
+    /*1 Блок */
+    /* ----------------------------------------- */
+    .btn {
+        font-size: 14px;
+    }
+
+    /* ----------------------------------------- */
+    /*2 Блок */
+    /* ----------------------------------------- */
+    .container-preview-exterior {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .main-title-exterior {
+        height: 6rem;
+        font-size: 26px;
+    }
+
+    .block-preview-exterior {
+        margin-top: 9rem;
+        height: 6rem;
+    }
+
+    .preview-title-exterior {
+        font-size: 10px;
+        margin-top: 0.7rem;
+    }
+
+    /* ----------------------------------------- */
+    /*3 Блок */
+    /* ----------------------------------------- */
+
+    .exterior-img {
+        height: 12rem;
+        width: 19rem;
+        max-width: 20rem;
+    }
+
+    .exterior-conteiner {
+        justify-content: center;
+        margin: 0rem;
+        max-width: 48rem;
+    }
+
+    .exterior-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exterior-block {
+        height: 15rem;
+        width: 18rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 15rem;
+        width: 18rem;
+        margin-right: 1.2rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .exterior-span {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для нетбука */
+/* Адаптив для нетбука     СТРАНИЦА EXTERIOR */
+/* Адаптив для нетбука */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+    body,
+    section {
+        max-width: 1024px;
+    }
+
+    /* ПЕРВЫЙ БЛОК НЕ МЕНЯЮ */
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+
+    .container-preview-exterior {
+        height: 80vh;
+    }
+
+    .main-title-exterior {
+        height: 7rem;
+        font-size: 46px;
+    }
+
+    .block-preview-exterior {
+        height: 12rem;
+    }
+
+    .preview-title-exterior {
+        font-size: 30px;
+        margin-top: 3rem;
+    }
+
+    /* ------------------------------------------------------------- */
+    /* Третий блок  */
+    /* ----------------------------------------------------------------- */
+
+    .exterior-img {
+        height: 16rem;
+        width: 28rem;
+    }
+
+    .exterior-block {
+        height: 20rem;
+        width: 34rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 20rem;
+        width: 34rem;
+        margin-right: 1rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+
+    }
+
+    .exterior-span {
+        font-size: 18px;
+        line-height: 40px;
+
+
+
+    }
+
+    /* ------------------------------------- */
+    /* 4 футер  без изменений*/
+    /* --------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для планшета */
+/* Адаптив для планшета     СТРАНИЦА EXTERIOR */
+/* Адаптив для планшета */
+/* --------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+    body,
+    section {
+        max-width: 768px;
+    }
+
+    /* ПЕРВЫЙ БЛОК */
+
+    .btn {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+
+    .container-preview-exterior {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 55vh;
+    }
+
+    .main-title-exterior {
+        height: 5rem;
+        font-size: 30px;
+    }
+
+    .block-preview-exterior {
+        height: 10rem;
+    }
+
+    .preview-title-exterior {
+        margin-top: 2.5rem;
+        font-size: 20px;
+    }
+
+    /* ----------------------------------------- */
+    /* 3 блок */
+    /* ----------------------------------------- */
+
+    .exterior-img {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .exterior-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        max-width: 48rem;
+    }
+
+    .exterior-description {
+        display: flex;
+        margin: 1rem;
+    }
+
+    .exterior-block {
+        height: 20rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 20rem;
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .exterior-span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* 4 блок. футер не трогаю */
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 480px */
+/* Адаптив для смартфона 480px    СТРАНИЦА EXTERIOR */
+/* Адаптив для смартфона 480px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    body,
+    section {
+        max-width: 480px;
+    }
+
+    /* ПЕРВЫЙ БЛОК */
+    .btn {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------- */
+    /* 2 Второй блок не трогаю */
+    /* ----------------------------------------- */
+
+    /* ----------------------------------------- */
+    /* 3 Третий блок */
+    /* ----------------------------------------- */
+    .exterior-img {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .exterior-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        max-width: 48rem;
+    }
+
+    .exterior-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exterior-block {
+        height: 20rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 20rem;
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .exterior-span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 320px */
+/* Адаптив для смартфона 320px    СТРАНИЦА EXTERIOR */
+/* Адаптив для смартфона 320px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 320px) {
+
+    body,
+    section {
+        max-width: 320px;
+    }
+
+    /* ----------------------------------------- */
+    /*1 Блок */
+    /* ----------------------------------------- */
+    .btn {
+        font-size: 14px;
+    }
+
+    /* ----------------------------------------- */
+    /*2 Блок */
+    /* ----------------------------------------- */
+    .container-preview-exterior {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .main-title-exterior {
+        height: 6rem;
+        font-size: 26px;
+    }
+
+    .block-preview-exterior {
+        margin-top: 9rem;
+        height: 6rem;
+    }
+
+    .preview-title-exterior {
+        font-size: 10px;
+        margin-top: 0.7rem;
+    }
+
+    /* ----------------------------------------- */
+    /*3 Блок */
+    /* ----------------------------------------- */
+
+    .exterior-img {
+        height: 12rem;
+        width: 19rem;
+        max-width: 20rem;
+    }
+
+    .exterior-conteiner {
+        justify-content: center;
+        margin: 0rem;
+        max-width: 48rem;
+    }
+
+    .exterior-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exterior-block {
+        height: 15rem;
+        width: 18rem;
+        margin-left: 1rem;
+    }
+
+    .exterior-block-reverse {
+        height: 15rem;
+        width: 18rem;
+        margin-right: 1.2rem;
+    }
+
+    .exterior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .exterior-span {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для нетбука */
+/* Адаптив для нетбука     СТРАНИЦА INTERIER */
+/* Адаптив для нетбука */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+    body,
+    section {
+        max-width: 1024px;
+    }
+
+    /* ПЕРВЫЙ БЛОК НЕ МЕНЯЮ */
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+
+    .container-preview-interior {
+        height: 80vh;
+    }
+
+    .main-title {
+        height: 7rem;
+        font-size: 46px;
+    }
+
+    .block-preview-interior {
+        height: 12rem;
+    }
+
+    .preview-title-interior {
+        font-size: 30px;
+        margin-top: 3rem;
+    }
+
+    /* ------------------------------------------------------------- */
+    /* Третий блок  */
+    /* ----------------------------------------------------------------- */
+
+    .interior-img {
+        height: 16rem;
+        width: 28rem;
+    }
+
+    .interior-block {
+        height: 20rem;
+        width: 34rem;
+        margin-left: 1rem;
+    }
+
+    .interior-block-reverse {
+        height: 20rem;
+        width: 34rem;
+        margin-right: 1rem;
+    }
+
+    .interior-h3 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+
+    }
+
+    .interior-span {
+        font-size: 18px;
+        line-height: 40px;
+
+
+
+    }
+
+    /* ------------------------------------- */
+    /* 4 футер  без изменений*/
+    /* --------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для планшета */
+/* Адаптив для планшета     СТРАНИЦА interior */
+/* Адаптив для планшета */
+/* --------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+    body,
+    section {
+        max-width: 768px;
+    }
+
+    /* ПЕРВЫЙ БЛОК */
+
+    .btn {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------- */
+    /* Второй блок */
+    /* ----------------------------------------- */
+
+    .container-preview-interior {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 55vh;
+    }
+
+    .main-title {
+        height: 5rem;
+        font-size: 30px;
+    }
+
+    .block-preview-interior {
+        height: 10rem;
+    }
+
+    .preview-title-interior {
+        margin-top: 2.5rem;
+        font-size: 20px;
+    }
+
+    /* ----------------------------------------- */
+    /* 3 блок */
+    /* ----------------------------------------- */
+
+    .interior-img {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .interior-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        max-width: 48rem;
+    }
+
+    .interior-description {
+        display: flex;
+        margin: 1rem;
+    }
+
+    .interior-block {
+        height: 20rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .interior-block-reverse {
+        height: 20rem;
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+    .interior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .interior-span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* 4 блок. футер не трогаю */
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 480px */
+/* Адаптив для смартфона 480px    СТРАНИЦА interior */
+/* Адаптив для смартфона 480px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    body,
+    section {
+        max-width: 480px;
+    }
+
+    /* ПЕРВЫЙ БЛОК */
+    .btn {
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------- */
+    /* 2 Второй блок не трогаю */
+    /* ----------------------------------------- */
+
+    /* ----------------------------------------- */
+    /* 3 Третий блок */
+    /* ----------------------------------------- */
+    .interior-img {
+        height: 16rem;
+        width: 24rem;
+    }
+
+    .interior-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        max-width: 48rem;
+    }
+
+    .interior-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interior-block {
+        height: 16rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .interior-block-reverse {
+        height: 16rem;
+        width: 20rem;
+        margin-right: 1rem;
+    }
+
+    .interior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .interior-span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* Адаптив для смартфона 320px */
+/* Адаптив для смартфона 320px    СТРАНИЦА interior */
+/* Адаптив для смартфона 320px*/
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 320px) {
+
+    body,
+    section {
+        max-width: 320px;
+    }
+
+    /* ----------------------------------------- */
+    /*1 Блок */
+    /* ----------------------------------------- */
+    .btn {
+        font-size: 14px;
+    }
+
+    /* ----------------------------------------- */
+    /*2 Блок */
+    /* ----------------------------------------- */
+    .container-preview-interior {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .main-title {
+        height: 6rem;
+        font-size: 26px;
+    }
+
+    .block-preview-interior {
+        margin-top: 9rem;
+        height: 6rem;
+    }
+
+    .preview-title-interior {
+        font-size: 10px;
+        margin-top: 0.7rem;
+    }
+
+    /* ----------------------------------------- */
+    /*3 Блок */
+    /* ----------------------------------------- */
+
+    .interior-img {
+        height: 12rem;
+        width: 19rem;
+        max-width: 20rem;
+    }
+
+    .interior-conteiner {
+        justify-content: center;
+        margin: 0rem;
+        max-width: 48rem;
+    }
+
+    .interior-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interior-block {
+        height: 15rem;
+        width: 18rem;
+        margin-left: 1rem;
+    }
+
+    .interior-block-reverse {
+        height: 15rem;
+        width: 18rem;
+        margin-right: 1.2rem;
+    }
+
+    .interior-h3 {
+        font-size: 20px;
+        margin-bottom: 0rem;
+    }
+
+    .interior-span {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
 }
